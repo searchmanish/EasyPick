@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">EasyPick</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="selectCat">
+        <item>Private</item>
+        <item>Corporate</item>
+        <item>Outstation</item>
+
+    </string-array>
+
+    <string-array name="selectPick">
+        <item>Dwarka</item>
+        <item>Moti Bagh</item>
+        <item>Rajouri Garden</item>
+        <item>New Delhi</item>
+        <item>Moti Nagar</item>
+        <item>Tilak Nagar</item>
+
+        <item>Moti Bagh</item>
+        <item>Ramesh Nagar</item>
+        <item>Uttam Nagar</item>
+        <item>Nawada</item>
+
+
+    </string-array>
+    <string-array name="selectDrop">
+        <item>Dwarka</item>
+        <item>Moti Bagh</item>
+        <item>Rajouri Garden</item>
+        <item>New Delhi</item>
+        <item>Moti Nagar</item>
+        <item>Tilak Nagar</item>
+
+        <item>Moti Bagh</item>
+        <item>Ramesh Nagar</item>
+        <item>Uttam Nagar</item>
+        <item>Nawada</item>
+
+    </string-array>
+</resources>

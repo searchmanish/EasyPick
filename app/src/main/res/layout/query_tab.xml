@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="25dp"
+    android:id="@+id/rootlayout1">
+
+    <LinearLayout
+        android:id="@+id/queryLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select"
+            android:paddingLeft="5dp"
+            />
+        <Spinner
+            android:id="@+id/selectCat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tooltipText="category"
+            android:background="#ffffff"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Pickup Location"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="10dp"
+            />
+        <Spinner
+            android:id="@+id/selectPick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginTop="10dp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Drop Location"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="10dp"
+            />
+        <Spinner
+            android:id="@+id/selectDrop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginTop="10dp"
+
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comment"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="30dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/queryComment"
+        android:layout_width="357dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/queryLinear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:gravity="top|left"
+        android:paddingLeft="10dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+    <ProgressBar
+        android:id="@+id/pBar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/queryComment"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <Button
+        android:id="@+id/msumbit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/queryComment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="SUBMIT"
+        android:textColor="#ffffff"
+        android:background="@drawable/ripple_effect_button"
+        android:layout_marginBottom="10dp" />
+
+
+</RelativeLayout>
