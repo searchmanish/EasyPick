@@ -2,6 +2,7 @@ package com.softcodeinfotech.easypick;
 
 
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -39,7 +40,7 @@ public class ContactFragment extends Fragment {
 
 
     Retrofit retrofit;
-    RelativeLayout rootlayout;
+    ConstraintLayout rootlayout;
 
     ServiceInterface serviceInterface;
 
@@ -52,7 +53,7 @@ public class ContactFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view = inflater.inflate(R.layout.contact, container, false);
+        view = inflater.inflate(R.layout.contactus, container, false);
         setUpwidget();
         // getInput();
 

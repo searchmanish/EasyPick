@@ -2,6 +2,7 @@ package com.softcodeinfotech.easypick;
 
 
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -22,7 +23,6 @@ import com.softcodeinfotech.easypick.response.LocationResponse;
 import com.softcodeinfotech.easypick.response.QueryFormResponse;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
@@ -48,7 +48,7 @@ public class QueryFragment extends Fragment {
     ArrayList<String> arrayList;
 
     Retrofit retrofit;
-    RelativeLayout root;
+    ConstraintLayout root;
     ServiceInterface serviceInterface;
 
 
@@ -61,7 +61,7 @@ public class QueryFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view = inflater.inflate(R.layout.query_tab, container, false);
+        view = inflater.inflate(R.layout.query, container, false);
         setUpWidget();
         pBar.setVisibility(View.GONE);
 
