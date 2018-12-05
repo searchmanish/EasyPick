@@ -248,6 +248,7 @@ public class QueryFragment extends Fragment {
 
     }
 
+
     private void setUpWidget() {
         selectCat = view.findViewById(R.id.selectCat);
         selectPick = view.findViewById(R.id.selectPick);

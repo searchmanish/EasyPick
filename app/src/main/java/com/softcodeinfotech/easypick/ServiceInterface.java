@@ -12,39 +12,31 @@ import retrofit2.http.Part;
 
 public interface ServiceInterface {
 
- @Multipart
+    @Multipart
     @POST("property/easypick/contactus.php")
-    Call<ContactusResponse> saveContact (
-         @Part("name")RequestBody name,
-         @Part("email")RequestBody email,
-         @Part("mobile")RequestBody mobile,
-         @Part("comment")RequestBody comment
-         );
+    Call<ContactusResponse> saveContact(
+            @Part("name") RequestBody name,
+            @Part("email") RequestBody email,
+            @Part("mobile") RequestBody mobile,
+            @Part("comment") RequestBody comment
+    );
 
 
     @Multipart
     @POST("property/easypick/queryform.php")
-    Call<QueryFormResponse> saveQuery (
-            @Part("category")RequestBody category,
-            @Part("picklocation")RequestBody picklocation,
-            @Part("droplocation")RequestBody droplocation,
-            @Part("comment")RequestBody comment
+    Call<QueryFormResponse> saveQuery(
+            @Part("category") RequestBody category,
+            @Part("picklocation") RequestBody picklocation,
+            @Part("droplocation") RequestBody droplocation,
+            @Part("comment") RequestBody comment
     );
 
 
     @Multipart
-            @POST("property/easypick/getlocation.php")
+    @POST("property/easypick/getlocation.php")
     Call<LocationResponse> getLocation(
-            @Part("location")RequestBody location
+            @Part("location") RequestBody location
     );
 
-   /* @Multipart
-    @POST("property/new_user_registration.php")
-    Call<NewUserRegistration> NewUserRegistrationCall(
-            @Part("fullname") RequestBody fullname,
-            @Part("email") RequestBody email,
-            @Part("phone") RequestBody phone,
-            @Part("username") RequestBody username,
-            @Part("password") RequestBody password
-    );*/
+
 }

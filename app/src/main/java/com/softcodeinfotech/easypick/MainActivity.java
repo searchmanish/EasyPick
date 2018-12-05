@@ -25,10 +25,10 @@ public class MainActivity extends AppCompatActivity {
 
          /* toolbar = findViewById(R.id.toolbar);
           toolbar.setTitle(getResources().getString(R.string.app_name));*/
-          tabLayout = findViewById(R.id.tablayout);
-          tabQuery = findViewById(R.id.queryForm);
-          tabContact = findViewById(R.id.contactUs);
-          final ViewPager viewPager = findViewById(R.id.viewPager);
+        tabLayout = findViewById(R.id.tablayout);
+        tabQuery = findViewById(R.id.queryForm);
+        tabContact = findViewById(R.id.contactUs);
+        final ViewPager viewPager = findViewById(R.id.viewPager);
 
 
         pageAdapter = new PageAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
@@ -36,13 +36,13 @@ public class MainActivity extends AppCompatActivity {
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
 
 
-        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener(){
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
 
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
-                if(tab.getPosition()==1) {
-                   // toolbar.setBackgroundColor(ContextCompat.getColor(MainActivity.this, R.color.colorAccent));
+                if (tab.getPosition() == 1) {
+                    // toolbar.setBackgroundColor(ContextCompat.getColor(MainActivity.this, R.color.colorAccent));
                     tabLayout.setBackgroundColor(ContextCompat.getColor(MainActivity.this,
                             R.color.colorAccent));
 
@@ -51,9 +51,9 @@ public class MainActivity extends AppCompatActivity {
                         getWindow().setStatusBarColor(ContextCompat.getColor(MainActivity.this,
                                 R.color.colorAccent));
                     }
-                } else  if (tab.getPosition() == 2) {
+                } else if (tab.getPosition() == 2) {
                     //toolbar.setBackgroundColor(ContextCompat.getColor(MainActivity.this,
-                        //    R.color.colorPrimary));
+                    //    R.color.colorPrimary));
                     tabLayout.setBackgroundColor(ContextCompat.getColor(MainActivity.this,
                             R.color.colorPrimary));
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {

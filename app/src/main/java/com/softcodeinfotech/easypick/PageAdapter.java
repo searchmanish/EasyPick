@@ -11,11 +11,12 @@ public class PageAdapter extends FragmentPagerAdapter {
         super(fm);
         this.numOfTabs = numOfTabs;
     }
+
     @Override
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-               return new ContactFragment();
+                return new ContactFragment();
             case 1:
                 return new QueryFragment();
 

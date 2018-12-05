@@ -6,6 +6,6 @@ public class Constant {
     public static final long API_READ_TIMEOUT = 1201;
 
     // public static final String BASE_URL =   "http://beliefitsolution.com/";
-    public static final String BASE_URL =  "http://dreamhousing.in/";
+    public static final String BASE_URL = "http://dreamhousing.in/";
 
 }
